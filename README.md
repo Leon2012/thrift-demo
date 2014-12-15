@@ -2,9 +2,11 @@ thrift-demo
 ===========
 
 1,下载thrift程序
+
 http://www.apache.org/dyn/closer.cgi?path=/thrift/0.9.2/thrift-0.9.2.exe
 
 2,编写thrift文件(RpcService.thrift)
+
 namespace go thrift.demo
 
 namespace php thrift.demo
@@ -17,6 +19,7 @@ service RpcService {
 
 
 3,生成开发库
+
 thrift-0.9.2.exe -r -gen go RpcService.thrift
 
 thrift-0.9.2.exe -r -gen php RpcService.thrift
