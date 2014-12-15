@@ -27,6 +27,18 @@ thrift-0.9.2.exe -r -gen php RpcService.thrift
 
 4,编写server端(server.go)
 
+5,安装php thrift扩展
 
-5,编写client端(client.php)
+git clone https://github.com/apache/thrift
+
+cd thrift/lib/php/src/ext/thrift_protocol
+
+phpize 
+
+./configure --with-php-config=php-config
+
+make & make install
+
+
+6,编写client端(client.php)
 
